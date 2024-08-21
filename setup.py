@@ -1,15 +1,12 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="NetWise",
+    name="ComputeWise",
     version="1.0.0",
     description="A comprehensive library for network and Wi-Fi security analysis. Here you can also check for your computer's performance, safety, scan your ifles and find specs.There are some features for backups to.",
     author="Hasan KAYAN",
     author_email="hasankayanformal@gmail.com",
-    author_website="https://www.hasankayan.com",
-    author_github="https://github.com/hasan-kayan",
-    packages=find_packages(where='lib'),
-    package_dir={'': 'lib'},
+    packages=find_packages(),  # Automatically finds the modules in the current directory
      install_requires=[
         "altgraph==0.17.4",
         "attrs==24.2.0",
